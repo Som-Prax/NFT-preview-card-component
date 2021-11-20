@@ -1,0 +1,134 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: "Outfit", sans-serif;
+  background-color: hsl(217, 54%, 11%);
+  max-width: 144rem;
+}
+
+@media (max-width: 30em) {
+  html {
+    font-size: 56%;
+  }
+}
+
+section {
+  width: 35rem;
+  margin: 5rem auto;
+  background-color: hsl(216, 50%, 16%);
+  border-radius: 9px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.pic-box {
+  height: 30rem;
+  width: 30rem;
+  margin: 2.5rem 0 2rem 0;
+  border-radius: 9px;
+  background-image: url(images/image-equilibrium.jpg);
+  background-size: contain;
+  display: block;
+  cursor: pointer;
+}
+
+.pic-box:active {
+  background-image: linear-gradient(rgba(0, 255, 247, 0.5), rgba(0, 255, 247, 0.5)), url(images/icon-view.svg), url(images/image-equilibrium.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 100%, 20%, 100%;
+}
+
+.content,
+.figure,
+.jules {
+  width: 30rem;
+}
+
+.content h1 {
+  color: #fff;
+  font-size: 2.4rem;
+  margin-bottom: 1.2rem;
+  cursor: pointer;
+}
+
+.content h1:active {
+  color: hsl(178, 100%, 50%);
+}
+
+.content p {
+  color: rgba(255, 255, 255, 0.5);
+  font-size: 1.8rem;
+  font-weight: 300;
+  margin-bottom: 3rem;
+}
+
+.figure {
+  display: flex;
+  justify-content: space-between;
+  font-size: 1.8rem;
+  padding-bottom: 2.5rem;
+  border-bottom: solid 1px hsl(215, 32%, 27%);
+  font-weight: 500;
+}
+
+.div-first {
+  display: flex;
+  align-items: center;
+  color: hsl(178, 100%, 50%);
+}
+
+.div-first img,
+.div-second img {
+  margin-right: 0.6rem;
+}
+
+.div-second {
+  display: flex;
+  align-items: center;
+  color: hsl(215, 51%, 70%);
+}
+
+.jules {
+  margin-top: 1.5rem;
+  padding-bottom: 2.5rem;
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+}
+
+.jules img {
+  height: 4rem;
+}
+
+.jules p {
+  font-size: 1.6rem;
+  color: rgba(255, 255, 255, 0.5);
+}
+
+.jules p span {
+  color: #fff;
+  cursor: pointer;
+}
+
+.jules p span:active {
+  color: hsl(178, 100%, 50%);
+}
+
+.attribution {
+  color: #fff;
+}
+
+.attribution a {
+  color: lightblue;
+}
